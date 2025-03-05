@@ -26,9 +26,12 @@ class IndexedDBStorage {
         });
     }
 
-    public async setItem(key: string, value: any) {
-        if (arguments.length < 2)
+    public async setItem(...args: any[]) {
+        if (args.length < 2)
             throw new TypeError("Failed to execute 'setItem' on 'IndexedDBStorage': 2 argument required, but only 0 present.");
+
+        const key: string = args[0];
+        const value: any = args[1];
 
         const db = await this._init_();
 
@@ -45,9 +48,11 @@ class IndexedDBStorage {
         });
     }
 
-    public async getItem(key: string) {
-        if (arguments.length < 1)
+    public async getItem(...args: any[]) {
+        if (args.length < 1)
             throw new TypeError("Failed to execute 'getItem' on 'IndexedDBStorage': 1 argument required, but only 0 present.");
+
+        const key: string = args[0];
 
         const db = await this._init_();
 
@@ -67,7 +72,12 @@ class IndexedDBStorage {
         });
     }
 
-    public async removeItem(key: string) {
+    public async removeItem(...args: any[]) {
+        if (args.length < 1)
+            throw new TypeError("Failed to execute 'removeItem' on 'IndexedDBStorage': 1 argument required, but only 0 present.");
+
+        const key: string = args[0];
+
         const db = await this._init_();
 
         return new Promise<void>((resolve, reject) => {

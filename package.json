@@ -1,0 +1,15 @@
+{
+  "name": "IndexDBStorage",
+  "version": "1.0.0",
+  "description": "A wrapper class over the non-easy api of the Indexeddb to make it like the LocalStorage api",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "typescript": "^5.8.2"
+  }
+}

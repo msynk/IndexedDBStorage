@@ -1,0 +1,16 @@
+{
+    "compilerOptions": {
+        "strict": true,
+        "noImplicitAny": true,
+        "lib": [
+            "dom",
+            "es2015"
+        ],
+        "rootDir": "./src",
+        "target": "es2015",
+        "outFile": "./index.js"
+    },
+    "include": [
+        "./src/**/*.ts"
+    ]
+}
