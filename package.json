@@ -1,14 +1,26 @@
 {
-  "name": "IndexDBStorage",
-  "version": "1.0.0",
+  "name": "@saleh_kebria/idbstorage",
+  "version": "1.0.3",
   "description": "A wrapper class over the non-easy api of the Indexeddb to make it like the LocalStorage api",
   "main": "index.js",
   "scripts": {
     "build": "tsc"
   },
-  "keywords": [],
-  "author": "",
+  "files": [
+    "index.js",
+    "README.md"
+  ],
+  "keywords": [
+    "indexeddb",
+    "Indexed DB",
+    "IDB",
+    "storage",
+    "database"
+  ],
+  "author": "msynk",
   "license": "ISC",
+  "repository": {"url": "https://github.com/msynk/IndexedDBStorage"},
+  "homepage": "https://github.com/msynk/IndexedDBStorage#indexeddbstorage",
   "devDependencies": {
     "typescript": "^5.8.2"
   }
